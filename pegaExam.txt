@@ -1,0 +1,572 @@
+WEEK 2 EXAM – Case Data Modeling and Business Policy Automation
+FoodBazar.com allows customers to order food online. The first stage of the application allows the user to select the food items to be ordered, second stage is for payment. On successful payment, the order will be routed to the delivery team, where any one from the delivery team can deliver the order.
+
+How would you configure this routing?
+Current user
+Specific user
+Work queue
+User
+    	Answer: ___C
+
+Rechargenow.com provides recharge talk-time offers. For the users who pay the recharge amount using recharge-now wallet, attractive discounts are provided. The discount amount should be credited to the user’s wallet account within 2 days. In case of any exception, the discount amount must be credited within 3 days.
+
+Based on the above scenario identify the goal and dead line values.
+Goal 2 days, Dead Line 3 days
+Goal 3 days, Dead Line 2 days
+Goal 2 days, Dead Line 1 days
+Goal 1 days, Dead Line 2 days
+
+Answer: ___A
+The Carpooling application is the sharing of rides so that more than one person can travel in the same car ride. Drivers and passengers can search and opt for required rides and then share their details.
+In this application, once the drivers or passengers have agreed up on a ride, they can also choose to cancel the ride at any point of time.
+
+In the above scenario, which will be the best possible option to cancel the ride?
+Cancellation stage will be the part of the primary or happy path of the case life cycle
+Add cancellation stage as an alternate stage
+Add cancellation as an optional process
+Configure the cancellation stage as resolution stage
+               Answer: ___B
+
+
+FeelAtHome allow users to plan for accommodation in different places, across the country. The customer enters his details and on successful submission, an operator will check the availability of rooms. He clicks YES if the rooms are available, NO if the rooms are not available. If the rooms are available, case will continue to the next stage to block the rooms. If NO, the case should automatically go to an alternative state where the customer can change the type of the room or number of rooms required or can change the dates.
+
+In the above scenario, how would you configure the case such that when the operator clicks on NO, the control must go to an alternate stage? 
+Use Change Stage process step to automatically transition the case flow to a specified stage.
+Use Optional process to automatically transition the case flow to a specified stage.
+Use Local action process to automatically transition the case flow to a specified stage.
+We can’t set the case flow automatically to a specific stage
+Answer: ___A
+FreeTicket.com allows the users to book movie tickets. To book a ticket, the users need to progress through different stages.
+The developer wants to add an option, where the users can add their Credit/Debit card details, whenever they want as they work on the case.
+
+Identify the best possible way to fulfill the above requirement.
+Use Change Stage process step to automatically transition the case to a specified stage.
+Add a new stage to add the Credit / Debit card details in the primary/happy path
+Add a new stage to add the Credit/Debit card details in the alternate stages and let user invoke the stage.
+Add an optional action which displays a screen to add the Credit/Debit card details.
+    	Answer: ___D
+EazyBuild develops products for its customers. For one of their customers, it has released a software product of a specific version “01-02-01”. In that release they found that one of the field is labeled incorrectly.
+What could be the version number, after fixing the bug?
+01-02-01
+02-02-01
+01-02-02
+02-02-02
+Answer: ___C 
+Each application consists of a sequence of rulesets, called a _________________________
+Rules
+Ruleset
+Ruleset Version
+Ruleset Stack
+Answer: ___A
+When you create a rule, the new record form prompts you to provide four pieces of information: rule type, identifier, class and ruleset.
+Map the four pieces of information with explanation:
+Rule type
+Identifier
+Class
+Ruleset
+
+Is the container for the rule
+Identifies the scope of the rule.
+Identifies the purpose of the rule.
+Determines the type of behavior modeled by the rule.
+
+A-> 1, B -> 2, C -> 3, D -> 4
+A -> 4, B -> 2, C -> 3, D -> 1
+A -> 4, B -> 3, C -> 2, D -> 1
+A -> 3, B ->2, C -> 4, D - > 1
+Answer: ___D
+A case type known as Candidate is created for the application SalesApp. This application is developed for the organization named MyOrg.
+Identify the class name for the Candidate case type, that is created by default.
+MyOrg-Candidate
+SalesApp-Candidate
+MyOrg-SalesApp-Candidate
+Candidate-SalesApp-MyOrg
+Answer: ___C
+In a banking application, to apply for the new credit card, the customer must provide details like: name, address and contact details. There is a one-to-one relationship between customer and name, and one to many relationship between customer and address. The addresses stored can be temporary address and permanent address.
+As a best practice, what will be the property type for the field Address?
+Page list
+Page group
+Value List
+Value group
+Answer: ___B
+Which property type is used to store both date and time?
+Date
+TimeOfDay
+DateTime
+TimeDate
+Answer: ___C
+Which of the following is not a single value property?
+Dateofpurchase
+Customer ID
+ProductDetails(1)
+Total Cost
+Answer: ___B
+The data transform used to initialize property values when creating a case is ________________________
+pxDefault
+pyDefault
+pySuperDefault
+ SetDefault
+Answer: ___B
+Identify the parent and child classes of MyCo-HomeIns .
+Given that the class of Claim case type is MyCo-HomeIns-Work-Claim
+MyCo and MyCo-HomeIns-Work-Claim
+MyCo-HomeIns-Work and MyCo-HomeIns-Work-Claim
+MyCo and no child class
+MyCo-HomeIns-Work and MyCo
+Answer: ___D
+In an online purchase application, the customer provides the shipping address and card information, and is prompted to provide a billing address.
+If the shipping and billing address are the same, the user wants to use some option and copy the shipping address in to billing address rather than re-entering the address.
+
+How can you implement the above requirement?
+
+Use pyDefault to copy shipping address to billing address
+Create a data transform to copy shipping to billing address
+We can’t copy the address from shipping to billing address as they are two different properties in a case type.
+We can’t have two properties which stores the same value in case type.
+Answer: ___B
+In a job request application, the applicant enters his previous JobTitles. We use JobTitle(3) to refer to his latest job title.
+As a best practice, what will be the property mode used to capture the job titles?
+Page list
+Page group
+Value list
+Value group
+Answer: ___A
+In one of the forms of a doctor appointment case type, a date-time property field is displayed. How do we set the value of date-time property to system date and time, when the case is created for appointment?
+Set the date-time property value at the time of creating the property
+Configure the pyDefault data transform to set the date-time property value
+Configure a data page to set the value of date-time property
+Write an activity to set the date-time property value
+Answer: ___B
+A page group property is used to hold the Home Address and Work Address.
+Which of the below statements is used to refer to the City property value of Home address.
+Address(Home).City
+Address(“Home”). City
+Address(“Home.City”)
+Address(“City”)
+Answer: ___A
+In one of the Pega applications, few property values from a parent case must be copied to the child case without any manipulation, when the child case is created.
+ How can we achieve this as a best practice?
+Declare expression
+Data transform
+Data propagation
+Forward chaining
+Answer: ___C
+Match the following:
+Clipboard
+pyWorkPage
+pyWorkCover	 
+contains the case data from the parent case
+contains only the data generated as you create and process a case
+is the portion of memory on the server reserved by Pega for the data generated by application
+
+A -> 1, B -> 2, C -> 3
+A -> 3, B -> 2, C -> 1
+A -> 3, B -> 1, C -> 2
+A -> 2, B -> 1, C -> 3
+Answer: ___B
+
+Which property is stored as an embedded page on the clipboard?
+pxCreateDateTime
+ pyID
+pxCreateOperator
+Customer page property
+Answer: ___
+Match the following standard shapes in a flow rule with their usage:
+Start
+Subprocess
+Decision
+Utility 
+Used to perform system actions, without requiring human intervention
+References a decision rule
+Represents the beginning of the process
+A smaller portion of the process 
+A -> 1, B -> 2, C -> 3, D -> 4
+A -> 1, C -> 3, B -> 4, D ->2
+A -> 3, B -> 4, C -> 2, D -> 1
+A -> 4, B -> 1, C -> 2, D -> 3
+Answer: ___C
+In online shopping application , the users can select a product to purchase. Upon selecting the product, the system will display the cost of the product and allows the user to select the quantity.
+ A declare expression uses the two source properties, Product Cost and Quantity to calculate the target property Total Cost.
+
+Identify the correct statement that is used inside the declare expression rule.
+Total Cost = Product Cost + Quantity
+Product Cost * Quantity = Total Cost
+Total Cost = Product Cost / Quantity
+Total Cost = Product Cost * Quantity
+Answer: ___D
+Match the following:
+Data-party-Com
+Data-Party-Gov
+Data-Party-Operator
+Data-Party-Person
+
+Case participant who lacks a login into pega application
+Case participant who has a login into pega application
+Party that models a government agency
+Business that represents a web domain 
+A -> 1, B -> 2, C -> 3, D -> 4
+A -> 4, B -> 3, C -> 2, D -> 1
+A -> 4, B -> 2, C -> 3, D -> 1
+A -> 1, B -> 3, C -> 2, D -> 4
+              Answer: ___B
+A Tourism online application accepts details of the tourists and allocates a guide guide, based on the language preferred by the tourist.
+Which of the following routers can be used to configure the routing of the case to appropriate guide, based on language??
+ToWorklist
+ToWorkGroupManager
+ToSkilledGroup
+ToWorkBasket
+Answer: ___C
+A ___________________ is a list of all open assignments for a specific user. If the assignments are queued for a team of users, the assignments are routed to ______________________.
+Worklist and Workbasket
+Workbasket and Worklist
+Routing and Worklist
+Worklist and SLA
+Answer: ___B
+When a customer requests for extension of Credit card limit, the Credit Card Company takes the decision based on the customer’s bill payment history.
+Which rule can be used to retrieve the customer’s bill payment history?
+Declare expression
+Data transform
+Report Definition
+Database rule
+Answer: ___D
+
+ __________ can be used as the source of dropdown or autocomplete control.
+
+Data page or report definition or clipboard page
+Data transform or report definition
+Data page or data transform or report definition
+Only data page
+Answer: ___A
+James wants to create a new Page property that can be used for one of the case types. He must specify ______ to create the page property. 
+Definition or data type
+Data type
+Data page
+Property type
+Answer: ___
+A text property named DepartmentName has been created and saved. We can change the _____ of the property later. 
+Type
+Control
+Both type and control
+Both mode and control
+Answer: ___B
+For ABC college of engineering, there are two applications namely Library management application and Transport application. Both  want to use the Student details. Choose the best practice creating the Student data type. 
+Create two Student data types for the two applications at the ABC organization layer
+Create a Student data type at the ABC organization layer, so that it can be used for both the applications
+Create a Student data type for each application independently
+Create three Student data types at the ABC organization layer.
+Answer: ___B
+There are two page properties namely Student and Customer. Both have a property called Name. To set the Customer’s Name to “ABC” using a data transform, then choose the correct option for achieving the same. 
+.Name equal to “ABC”
+.Student.Name equal to “ABC”
+.Customer.Name equal to “ABC”
+.Name.Customer equal to “ABC”
+Answer: ___C
+When you add a process to a case life cycle in Case Designer, Pega automatically creates a ____Rule. 
+Flow Action
+Process
+Flow
+Step
+Answer: ___A
+
+To package rules for distribution as part of an application, you collect rules into a group called
+Rule Set
+Class
+Application Rule
+Access Group
+Answer: ___A
+Choose the correct statement 
+Declarative processing depends on rules like data transforms etc.
+Procedural processing is easy to configure and maintain
+Procedural processing depends on rules like declare expression
+With Declarative processing, updates occur only when in triggered in the application
+Answer: ___
+Declarative networks are commonly designed with declare expressions that are configured for _______. 
+Forward chaining
+Backward chaining
+Primary chaining
+Secondary chaining
+Answer: ___
+PayrollSetup is child case of NewHire case. CompanyTour is a spin-off case of NewHire case. In this scenario, data can be propagated from ____. 
+PayrollSetup to NewHire
+CompanyTour to NewHire and PayrollSetup to NewHire
+PayrollSetup to CompanyTour
+NewHire to PayrollSetup
+Answer: ___D
+The routing directions can be specified in which of the following locations? 
+Case life cycle
+Assignment shape
+Approval process smart shape
+All of the above
+ Answer: ___A
+
+You have the data page which contains data about the temperature. The data page is configured to reload if it is older than one hour. 
+Which of the following describes when the data page will be reloaded? 
+The data page reloads automatically one hour after it was created.
+The data page reloads on the next access one hour after it was created
+The data page reloads automatically one hour after it was last accessed
+The data page reloads on next access one hour after it was accessed
+Answer: ___C
+Consider the following classes. 
+MyApp-Ins-Claim
+MyApp-Ins-Claim-Details
+MyApp-Ins-Claim-Details-Review
+ MyApp-Ins-Claim class contains a property rule named City and is assigned value “Seattle”. MyApp-Ins-Claim-Details class contains a property rule named Color and is assigned value “Red”. MyApp-Ins-Claim-Details-Review class contains a property rule named City and is assigned a value “Delhi”. All the classes are using pyDefault data transform to set these property values.
+After the Review case is created what are the values of City and Color properties:
+City=Delhi,   Color=Red
+City=Delhi , Color=no value
+City=Seattle ,  Color=Red
+City=Seattle  , Color=no value
+Answer:  ___A
+
+
+Enrich corporation hires developers in multiple technologies.  Every employee will be put in Department “Global” for the first 1 month.  How do you implement assigning Department as “Global” by default, as soon as you create Onboarding case.
+
+Using pyDefault Data Transform
+Use Activity and copy data to Department property
+Manually fill Department name as “Global”
+Use Data Propagation
+Answer: ___B
+In BigApple Pvt.Ltd Employees should fill the claim form by providing the employee id, name, department and type of expense.  The type of expense can be “Mobile Bill”, “Petrol Bill”, “Team outing”, “Train ticket”, “Bus ticket”, “Others”.  Which of the following can be used to capture the type of expense? 
+Picklist
+TextInput
+TextArea
+Field Group
+
+Answer: ___A
+
+Every day 20 birth cases gets recorded in  Bless Hospitals.  Hospital has decided to automate the record of births.  The details that Hospital wants to capture are Date and Time of birth, Father’s Name, Mother’s Name, Gender, Address.  Identify the property type that is used to record Date and Time of birth. 
+Date only
+Date & time
+Time Only
+Text Input
+Answer: ___B
+In a job onboarding application, the employees are asked to enter their first name and last name based on which their professional email id will be created. The format of the  email is “first name.last name@companydomain” .Which rule can be used to populate data into the email id property?
+ (Hint: Company domain: ABC.com First name: Avinash Last name: Goenkar -> Suggested email id: Avinash.Goenkar@ABC.com)
+Data Transform
+Decision table
+Decision tree
+Data Propagation
+Answer: ___
+
+Pega uses a unique application architecture called 
+Situational layer cake
+Service Oriented Architecture (SOA)
+Enterprise Architecture
+Distributed architecture
+Answer: ___A
+In an application form, the employee needs to submit his dependent details. In this scenario, Dependent(Child) is an example of __________ property mode. 
+Page group
+Page list
+Value group
+Value List
+Answer: ___A
+In a banking application, the online funds transfer will be initiated only if the transfer is to be done before 3:00 PM on any working day. Then, what type of property will you use to check the constraint?
+Date only
+Time only
+Date and Time
+Custom property
+Answer: ___D
+In MyDoctor.com, once the user sets an appointment, the confirmation about the appointment must be sent to the user.
+How would you configure the above scenario in the case life-cycle.
+Configure send email smart shape
+Configure parallel process to send email
+Configure alternate stage to send email
+Configure sub process to send mail
+Answer: ___
+
+You have a class Claim with a sub class Home. The subclass Home in turn has a subclass Rental with pyDefault data transforms at each level that sets default values.
+If a Rental case is created, then which class data transform will be invoked first?
+Rental Class
+Claim Class
+Home Class
+All at the same time
+Answer:  ___
+In an online shopping application, the customer wants to see his list of orders based on the product category like Electronics, House hold, Beauty and Cosmetics etc. what type of property should be used to hold the list of orders based on the product category> 
+Page group
+Page list
+Value group
+Value List
+Answer: ___D
+Match the listed fields to the best suitable property types while creating the forms.
+Fields:
+a) Student Registration Number
+b) Date of Birth
+c) Branch
+d) Description (Write 200 words about yourself)
+ Data Types:
+1) Date Only
+2) Text (Paragraph)
+3) Text (Single line)
+4) Picklist
+
+A: a-1, b-2, c-3, d-4
+B: a-3, b-1, c-4, d-2
+C: a-1, b-3, c-2, d-4
+D: a-4, b-2, c-1, d-3
+
+Answer: ___B
+
+Match the following:
+A)The Information collected in a case should be shared to a child case
+B) The fields of the UI form should be populated with default values
+C) The Customer Details must be filled up automatically when the user logs in  through proper credentials
+
+1) pyDefault data transform
+2) Any Data Transform rule
+3) Data Propagation
+A: a-1,  b-2,  c-3
+B: a-2,  b-3,  c-1
+C: a-1,  b-3,  c-2
+D: a-3, b-1, c-2
+
+Answer: ___A
+
+Which of the following statements is true about a property type. 
+The property type can be changed after the property has been saved.
+The property type cannot be changed after the property has been saved.
+The property type can be changed after the property has been saved, if it is in the same class hierarchy.
+The property type can be changed after the property has been saved, if it is in another class hierarchy.
+Answer: ___B
+A HungryBazar.com, allows the users to place an order for the food online. The first stage of the application allows the user to select the food items to be ordered, second stage process for the payment. On success, the application need to send the email confirmation to the users.
+
+Which smart shape is used to configure the above requirement?
+Attach Content
+Change Stage
+Send email
+Email
+    	Answer: ___C
+Passed Deadline time interval is always measured from the end of the _______________
+Previous Task
+A case
+Goal
+Deadline 
+Answer: ___D
+
+
+Match the business need to the appropriate service level agreement interval. 
+Business:
+An employee must submit the expense report within 48 hours of completing trip.
+An employee should submit the expense report within 24 hours of completing trip
+An employee receives a remainder email every day until the expense report is submitted 
+Service level agreement interval:
+1. Deadline
+2. Goal
+3. Passed Deadline
+
+Options:
+A) A -> 1, B -> 2, C -> 3
+B) A -> 1, B -> 3, C -> 2
+C) A -> 2, B -> 1, C -> 3
+D) A -> 3, B -> 2, C -> 1
+ Answer: ___A
+
+ An application includes the property reference .Customer.Assets(3).AssetType.
+The property type of .Assets(3) is a ________________. 
+Page List
+Page Group
+Value List
+Page
+ Answer: ___A
+
+
+In a leave application, the manager should approve or reject the employee leave request within 1 day and urgency value is set to 30 or the manager must approve or reject the request within 2 days and urgency value is set to 40.
+What will be the urgency value, for the below scenario by the time manager has approved the employee leave request.
+1. The employee has request for the leave on 12-Jan-2017 at 3:00 PM
+2. The manager has approved the leave request on 14-Jan-2017 at 10:00 AM
+a. 10
+b. 30
+c. 40
+d. 70 
+Answer:  ___
+ In an application, the system allows the user to book the movie tickets online. On success of payment, the user should get a confirmation email about the ticket booking.
+How would you configure email for the above scenario, in the case life-cycle?
+Configure Correspondence to send email
+Configure Change Stage to send email
+Configure alternate stage to send email
+Configure sub process to send mail 
+Answer: ___
+What is the purpose of the pyDefault data transform? 
+A. To propagate property values from a parent to a sub case
+B. To initialize property values when a case is created
+C. To set the calculated value in the target property, when source property value is changed
+D. To set the action events on the controls
+Answer: ___
+CabsOnWheels.com is leading travel service provider.  Mr. Dill is working as a Pega developer and needs to develop a module that gets total cars available as a report.  The data should be populated after every 1 hour or when any new car is added to the existing cars.  The Refresh Strategy used was reload if older than 1 hour.  And another refresh strategy was added to check if a new car has been added or not. A data page was used for the above requirement and it was create at 10 am. At 10:38 am a new car was added to the available cars list. If a customer uses this application at 10.40 am, will he get the newly added car details also? 
+Yes
+No
+May or may not get
+Data page does not support 2 refresh strategies to be configured at the same time 
+Answer:  ___
+
+ForUMedicines.com is an online store to order medicines, here the user can see list of all available medicines.  Simply the customer needs to upload the prescription and order and pay using credit or debit card.  So for displaying list of all available medicines the developer has used data pages.  What is the scope of the data page that contains medicines so that all customers can access and order online? 
+Thread
+Node
+Requestor
+Local storage 
+Answer: ___
+
+____________ in a declare expression means that a target property value is not automatically updated when other declare expressions in a network update their target values. 
+Backward chaining
+Forward chaining
+Declarative processing
+Data transformation 
+Answer: ___
+
+The primary benefit of ____________ processing is that updates occur only when triggered in the application. 
+Procedural processing
+Declarative processing
+Analytical processing
+Predictive processing 
+Answer: ___
+
+_________ allows you to customize the behavior of your application to address each exception condition you identify using a collection of targeted rules rather than one complex, difficult-to-maintain rule. 
+Rule resolution
+Circumstancing
+Base rules
+Duplicate rules 
+               Answer: ___
+
+Identify the correct data transform that suits the above scenario.  Consider “Same” is the when rule that checks whether user selected the checkbox to specify that Billing Address and Delivery Address are same.
+
+When   Same
+      		Set .Customer.Address(Billing)  equal to .Customer.Address(Delivery)
+When not Same
+      		Set .Customer.Address(Billing)  equal to .Customer.Address(Delivery)
+C.   When datatransform
+     		Set Customer.Address(Billing)  equal to Customer.Address(Delivery)
+D. None of the given options are correct
+
+ANSWER: ___
+
+ An employee applies for a leave in which he enters name, id and start and end date. After entering details, the case is routed to manager. Once the manager approves leave request an email should be sent to the employee as ‘Leave Granted’. How do we configure this?
+
+Add send email step after the Approval step.
+Add send mail step
+Add send email step in alternate stage
+Add utility smart shape for correspondence in alternate stages 
+ANSWER: ___
+
+68. Match the following
+
+a. Page			1. acts as a container for an ordered list of text values.
+b. Page list		2. acts as a container for an unordered list of text values
+c. Value group		3. numerically ordered list
+d. Value list		4. single entity
+
+A: a-4, b- 1, c-3, d-2
+B: a-2, b-1, c-3, d-4
+C: a-4, b-3, c-2, d-1
+D: a-3, b-1, c-3, d-4
+Answer: ___
+ 69. Which of the following is another name for a page list property?
+	A. FieldGroup
+	B. PickList
+	C. FieldGroup(list)
+	D. ValueGroup 
+	ANSWER: ___
+70. Which of the following reserved prefix is used to define standard set of property rules, that an application can read from but not write to? 
+	A. px
+	B. py
+	C. ph
+	D. pd 
+	ANSWER: ___
