@@ -15,7 +15,6 @@ Goal 2 days, Dead Line 3 days
 Goal 3 days, Dead Line 2 days
 Goal 2 days, Dead Line 1 days
 Goal 1 days, Dead Line 2 days
-
 Answer: ___A
 The Carpooling application is the sharing of rides so that more than one person can travel in the same car ride. Drivers and passengers can search and opt for required rides and then share their details.
 In this application, once the drivers or passengers have agreed up on a ride, they can also choose to cancel the ride at any point of time.
@@ -170,7 +169,7 @@ pxCreateDateTime
  pyID
 pxCreateOperator
 Customer page property
-Answer: ___
+Answer: ___A
 Match the following standard shapes in a flow rule with their usage:
 Start
 Subprocess
@@ -242,7 +241,7 @@ Definition or data type
 Data type
 Data page
 Property type
-Answer: ___
+Answer: ___B
 A text property named DepartmentName has been created and saved. We can change the _____ of the property later. 
 Type
 Control
@@ -279,13 +278,13 @@ Declarative processing depends on rules like data transforms etc.
 Procedural processing is easy to configure and maintain
 Procedural processing depends on rules like declare expression
 With Declarative processing, updates occur only when in triggered in the application
-Answer: ___
+Answer: ___D
 Declarative networks are commonly designed with declare expressions that are configured for _______. 
 Forward chaining
 Backward chaining
 Primary chaining
 Secondary chaining
-Answer: ___
+Answer: ___A
 PayrollSetup is child case of NewHire case. CompanyTour is a spin-off case of NewHire case. In this scenario, data can be propagated from ____. 
 PayrollSetup to NewHire
 CompanyTour to NewHire and PayrollSetup to NewHire
@@ -346,7 +345,7 @@ Data Transform
 Decision table
 Decision tree
 Data Propagation
-Answer: ___
+Answer: ___D
 
 Pega uses a unique application architecture called 
 Situational layer cake
@@ -372,7 +371,7 @@ Configure send email smart shape
 Configure parallel process to send email
 Configure alternate stage to send email
 Configure sub process to send mail
-Answer: ___
+Answer: ___D
 
 You have a class Claim with a sub class Home. The subclass Home in turn has a subclass Rental with pyDefault data transforms at each level that sets default values.
 If a Rental case is created, then which class data transform will be invoked first?
@@ -380,7 +379,7 @@ Rental Class
 Claim Class
 Home Class
 All at the same time
-Answer:  ___
+Answer:  ___B
 In an online shopping application, the customer wants to see his list of orders based on the product category like Electronics, House hold, Beauty and Cosmetics etc. what type of property should be used to hold the list of orders based on the product category> 
 Page group
 Page list
@@ -477,54 +476,54 @@ a. 10
 b. 30
 c. 40
 d. 70 
-Answer:  ___
+Answer:  ___B
  In an application, the system allows the user to book the movie tickets online. On success of payment, the user should get a confirmation email about the ticket booking.
 How would you configure email for the above scenario, in the case life-cycle?
 Configure Correspondence to send email
 Configure Change Stage to send email
 Configure alternate stage to send email
 Configure sub process to send mail 
-Answer: ___
+Answer: ___D
 What is the purpose of the pyDefault data transform? 
 A. To propagate property values from a parent to a sub case
 B. To initialize property values when a case is created
 C. To set the calculated value in the target property, when source property value is changed
 D. To set the action events on the controls
-Answer: ___
+Answer: ___B
 CabsOnWheels.com is leading travel service provider.  Mr. Dill is working as a Pega developer and needs to develop a module that gets total cars available as a report.  The data should be populated after every 1 hour or when any new car is added to the existing cars.  The Refresh Strategy used was reload if older than 1 hour.  And another refresh strategy was added to check if a new car has been added or not. A data page was used for the above requirement and it was create at 10 am. At 10:38 am a new car was added to the available cars list. If a customer uses this application at 10.40 am, will he get the newly added car details also? 
 Yes
 No
 May or may not get
 Data page does not support 2 refresh strategies to be configured at the same time 
-Answer:  ___
+Answer:  ___A
 
 ForUMedicines.com is an online store to order medicines, here the user can see list of all available medicines.  Simply the customer needs to upload the prescription and order and pay using credit or debit card.  So for displaying list of all available medicines the developer has used data pages.  What is the scope of the data page that contains medicines so that all customers can access and order online? 
 Thread
 Node
 Requestor
 Local storage 
-Answer: ___
+Answer: ___C
 
 ____________ in a declare expression means that a target property value is not automatically updated when other declare expressions in a network update their target values. 
 Backward chaining
 Forward chaining
 Declarative processing
 Data transformation 
-Answer: ___
+Answer: ___A
 
 The primary benefit of ____________ processing is that updates occur only when triggered in the application. 
 Procedural processing
 Declarative processing
 Analytical processing
 Predictive processing 
-Answer: ___
+Answer: ___B
 
 _________ allows you to customize the behavior of your application to address each exception condition you identify using a collection of targeted rules rather than one complex, difficult-to-maintain rule. 
 Rule resolution
 Circumstancing
 Base rules
 Duplicate rules 
-               Answer: ___
+               Answer: ___B
 
 Identify the correct data transform that suits the above scenario.  Consider “Same” is the when rule that checks whether user selected the checkbox to specify that Billing Address and Delivery Address are same.
 
@@ -536,7 +535,7 @@ C.   When datatransform
      		Set Customer.Address(Billing)  equal to Customer.Address(Delivery)
 D. None of the given options are correct
 
-ANSWER: ___
+ANSWER: ___D
 
  An employee applies for a leave in which he enters name, id and start and end date. After entering details, the case is routed to manager. Once the manager approves leave request an email should be sent to the employee as ‘Leave Granted’. How do we configure this?
 
@@ -544,7 +543,7 @@ Add send email step after the Approval step.
 Add send mail step
 Add send email step in alternate stage
 Add utility smart shape for correspondence in alternate stages 
-ANSWER: ___
+ANSWER: ___D
 
 68. Match the following
 
@@ -557,16 +556,16 @@ A: a-4, b- 1, c-3, d-2
 B: a-2, b-1, c-3, d-4
 C: a-4, b-3, c-2, d-1
 D: a-3, b-1, c-3, d-4
-Answer: ___
+Answer: ___A
  69. Which of the following is another name for a page list property?
 	A. FieldGroup
 	B. PickList
 	C. FieldGroup(list)
 	D. ValueGroup 
-	ANSWER: ___
+	ANSWER: ___B
 70. Which of the following reserved prefix is used to define standard set of property rules, that an application can read from but not write to? 
 	A. px
 	B. py
 	C. ph
 	D. pd 
-	ANSWER: ___
+	ANSWER: ___A
